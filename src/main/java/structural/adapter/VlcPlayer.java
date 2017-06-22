@@ -1,17 +1,17 @@
-package creational.adapter;
+package structural.adapter;
 
 /**
  * Created by rek on 22.06.17.
  */
-public class Mp4Player implements AdvancedMediaPlayer {
+public class VlcPlayer implements AdvancedMediaPlayer {
 
     @Override
     public void playVlc(String fileName) {
-        // do nothing
+        System.out.println("Playing vlc file: " + fileName);
     }
 
     @Override
     public void playMp4(String fileName) {
-        System.out.println("Playing mp4 file: " + fileName);
+        // do nothing
     }
 }
